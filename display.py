@@ -1,2 +1,5 @@
-def main():
-    print("Hello from display")
+import tidalapi
+
+class Display:
+    def __init__(self):
+        print("Display intializing")

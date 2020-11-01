@@ -9,5 +9,5 @@ pipinstall tidalapi
 ```
 ## Running Program
 ```
-python jukebox.py
+python waves.py
 ```
