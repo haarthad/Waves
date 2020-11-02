@@ -5,7 +5,8 @@ This project conforms to the PEP 8 Style Guide (https://www.python.org/dev/peps/
 - Install python (https://www.python.org/ftp/python/3.9.0/python-3.9.0-amd64.exe)
 - Install the following libraries:
 ```
-pipinstall tidalapi
+pip install tidalapi
+pip install pyqt5
 ```
 ## Running Program
 ```
