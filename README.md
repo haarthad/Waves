@@ -8,7 +8,7 @@ This project conforms to the PEP 8 Style Guide (https://www.python.org/dev/peps/
 pip install tidalapi
 pip install pyqt5
 ```
-## Running Program
+## Run Program
 ```
 python waves.py
 ```
