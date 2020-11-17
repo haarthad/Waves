@@ -1,4 +1,6 @@
 import tidalapi
+import os.path
+
 
 class Jukebox:
     def __init__(self):
@@ -7,6 +9,18 @@ class Jukebox:
         self.username = None
         self.password = None
         self.credentials = "credentials.txt"
+
+    def setup(self):
+        if not os.path.isfile(self.credentials):
+            print("Tidal credentials not found")
+            self.username = input("Enter your email address: ")
+            self.password = input("Enter your password: ")
+
+            writer = open(self.credentials, "w")
+            writer.write(self.username+"\n")
+            writer.write(self.password+"\n")
+        else:
+            print("Tidal credentials found")
         
     def signin(self):
         # Read username and password from credentials file
